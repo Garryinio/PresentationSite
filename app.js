@@ -6,14 +6,11 @@ import { FBXLoader } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/j
 
 let scene, camera, mixer1,renderer,soare,mercur,venus,terra,marte,jupiter,saturn,uranus,neptun,meObj,torus;
 const clock1 = new THREE.Clock();
-const stele = new Array(300);
 function init() {
     const loader_ch = new FBXLoader();
     scene = new THREE.Scene();
 
     camera=new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000);
-    const helper = new THREE.CameraHelper( camera );
-    scene.add( helper );
 
     renderer = new THREE.WebGLRenderer({
         antialias: true,

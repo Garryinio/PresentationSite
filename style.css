@@ -5,7 +5,10 @@ canvas {
   top: 0;
   left: 0;
 }
-
+a{
+  text-decoration: none;
+  color: red;
+}
 
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
